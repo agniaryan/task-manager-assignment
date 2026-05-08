@@ -12,7 +12,7 @@ async function createProject(){
         createdBy:user
     };
 
-    const response=await fetch("http://localhost:8080/api/projects",{
+    const response=await fetch("https://gleaming-passion-production-42ec.up.railway.app/api/projects",{
         method:"POST",
         headers:{
             "Content-Type":"application/json"
@@ -28,7 +28,7 @@ async function createProject(){
 
 async function loadProjects(){
 
-    const response=await fetch("http://localhost:8080/api/projects");
+    const response=await fetch("https://gleaming-passion-production-42ec.up.railway.app/api/projects");
 
     const projects=await response.json();
 

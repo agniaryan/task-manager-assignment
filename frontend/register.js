@@ -7,7 +7,7 @@ async function registerUser(){
         role:document.getElementById("role").value
     };
 
-    const response=await fetch("http://localhost:8080/api/users",{
+    const response=await fetch("https://gleaming-passion-production-42ec.up.railway.app/api/users",{
         method:"POST",
         headers:{
             "Content-Type":"application/json"
