@@ -5,7 +5,7 @@ const loggedInUser = JSON.parse(
 async function loadUsers(){
 
     const response = await fetch(
-        "http://localhost:8080/api/users"
+        "https://gleaming-passion-production-42ec.up.railway.app/api/users"
     );
 
     const users = await response.json();
@@ -64,7 +64,7 @@ async function createTask(){
     };
 
     const response = await fetch(
-        "http://localhost:8080/api/tasks",
+        "https://gleaming-passion-production-42ec.up.railway.app/api/tasks",
         {
             method:"POST",
 
@@ -101,7 +101,7 @@ async function createTask(){
 async function loadTasks(){
 
     const response = await fetch(
-        "http://localhost:8080/api/tasks"
+        "https://gleaming-passion-production-42ec.up.railway.app/api/tasks"
     );
 
     const tasks = await response.json();
@@ -191,7 +191,7 @@ async function loadTasks(){
 async function deleteTask(id){
 
     await fetch(
-        `http://localhost:8080/api/tasks/${id}`,
+        `https://gleaming-passion-production-42ec.up.railway.app/api/tasks/${id}`,
         {
             method:"DELETE"
         }

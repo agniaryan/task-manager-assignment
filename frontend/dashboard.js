@@ -1,6 +1,6 @@
 async function loadDashboard(){
 
-    const response=await fetch("http://localhost:8080/api/tasks");
+    const response=await fetch("https://gleaming-passion-production-42ec.up.railway.app/api/tasks");
 
     const tasks=await response.json();
 
