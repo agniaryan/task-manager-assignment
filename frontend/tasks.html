@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Task Management</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav>
+
+    <h2>Task Management</h2>
+
+    <div>
+
+        <a href="dashboard.html">
+            Dashboard
+        </a>
+
+        <a href="projects.html">
+            Projects
+        </a>
+
+    </div>
+
+</nav>
+
+<div class="form-card">
+
+    <h2>Create Task</h2>
+
+    <table class="form-table">
+
+        <tr>
+
+            <td>
+                Task Title
+            </td>
+
+            <td>
+
+                <input
+                        type="text"
+                        id="title"
+                        placeholder="Enter Task Title"
+                >
+
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>
+                Description
+            </td>
+
+            <td>
+
+                <textarea
+                        id="description"
+                        placeholder="Enter Description"
+                ></textarea>
+
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>
+                Due Date
+            </td>
+
+            <td>
+
+                <input
+                        type="date"
+                        id="dueDate"
+                >
+
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>
+                Submission Date
+            </td>
+
+            <td>
+
+                <input
+                        type="date"
+                        id="submissionDate"
+                >
+
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>
+                Assign Member
+            </td>
+
+            <td>
+
+                <select id="assignedUser">
+
+                </select>
+
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>
+                Status
+            </td>
+
+            <td>
+
+                <select id="status">
+
+                    <option value="TODO">
+                        TODO
+                    </option>
+
+                    <option value="IN_PROGRESS">
+                        IN_PROGRESS
+                    </option>
+
+                    <option value="DONE">
+                        DONE
+                    </option>
+
+                </select>
+
+            </td>
+
+        </tr>
+
+    </table>
+
+    <button onclick="createTask()">
+
+        Create Task
+
+    </button>
+
+</div>
+
+<h2 class="section-title">
+
+    Task Dashboard
+
+</h2>
+
+<table>
+
+    <thead>
+
+    <tr>
+
+        <th>Title</th>
+
+        <th>Assigned To</th>
+
+        <th>Status</th>
+
+        <th>Due Date</th>
+
+        <th>Submission Date</th>
+
+        <th>Overdue</th>
+
+        <th>Actions</th>
+
+    </tr>
+
+    </thead>
+
+    <tbody id="taskList">
+
+    </tbody>
+
+</table>
+
+<script src="task.js"></script>
+
+</body>
+</html>
