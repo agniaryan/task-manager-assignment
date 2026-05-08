@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Register</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2 class="main-heading">
+            Team Task Manager
+        </h2>
+
+        <h3 class="sub-heading">
+            Registration
+        </h3>
+
+        <table class="form-table">
+
+            <tr>
+
+                <td>
+                    Name
+                </td>
+
+                <td>
+                    <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter Name"
+                    >
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>
+                    Email
+                </td>
+
+                <td>
+                    <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter Email"
+                    >
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>
+                    Password
+                </td>
+
+                <td>
+                    <input
+                            type="password"
+                            id="password"
+                            placeholder="Enter Password"
+                    >
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>
+                    Role
+                </td>
+
+                <td>
+
+                    <select id="role">
+
+                        <option value="ADMIN">
+                            ADMIN
+                        </option>
+
+                        <option value="MEMBER">
+                            MEMBER
+                        </option>
+
+                    </select>
+
+                </td>
+
+            </tr>
+
+        </table>
+
+        <button onclick="registerUser()">
+
+            Register
+
+        </button>
+
+        <p class="bottom-text">
+
+            Already have account?
+
+            <a href="index.html">
+                Login
+            </a>
+
+        </p>
+
+    </div>
+
+</div>
+
+<script src="register.js"></script>
+
+</body>
+</html>

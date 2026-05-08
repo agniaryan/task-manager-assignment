@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Projects</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav>
+
+    <h2>Project Management</h2>
+
+    <div>
+
+        <a href="dashboard.html">Dashboard</a>
+
+        <a href="tasks.html">Tasks</a>
+
+    </div>
+
+</nav>
+
+<div class="form-card">
+
+    <h2>Create Project</h2>
+
+    <table class="form-table">
+
+        <tr>
+
+            <td>
+
+                Project Name
+
+            </td>
+
+            <td>
+
+                <input
+                        type="text"
+                        id="projectName"
+                        placeholder="Enter Project Name"
+                >
+
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>
+
+                Description
+
+            </td>
+
+            <td>
+
+                <textarea
+                        id="projectDescription"
+                        placeholder="Enter Description"
+                ></textarea>
+
+            </td>
+
+        </tr>
+
+    </table>
+
+    <button onclick="createProject()">
+
+        Create Project
+
+    </button>
+
+</div>
+
+<h2 class="section-title">
+
+    Project Dashboard
+
+</h2>
+
+<div id="projectList" class="project-grid">
+
+</div>
+
+<script src="project.js"></script>
+
+</body>
+</html>
